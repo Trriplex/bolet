@@ -12,18 +12,33 @@ First, the string `"Hello world !"` is added to the stack, and then, it's printe
 `> 2 3 + .` prints 5. `+` pops 2 and 3 out of the stack, and then pushes 5. `.`, like in forth, pops and prints the top of the stack.<br>
 
 ## Compiling
-`gcc -o main main.c`
+Just run `make`.
 
-## Reference
-### `+`, `-`, `*`, `/`
-Pops two numbers out of the stack, compute an operation and pushes the result to stack
+## Exiting the REPL
+Type `^D` (`ctrl + D` or `EOF`)
+
+## Methods reference
+### `+`, `-`, `*`, `/`, `%'
+Basic arithmetic operations. It pops two numbers out of the stack and pushes the result
 ### `.`
 Pops and prints the top of the stack. It only works with numbers
 ### `..`
 Pops and prints the top of the stack. It only works with strings
+### `print`
+Prints the top item without popping it
+### `printn`
+Prints the top item without popping it
 ### `swp`
 Swaps the first two elements of the stack
-### `print`
-Prints the string on the top of the stack without popping it.
-### `printn`
-Prints the number on the top of the stack without popping it.
+### `dup`
+Duplicates the top of the stack
+### `drp`
+Pops the top of the stack without printing it
+### `nip`
+Pops the second item of the stack without printing it
+### `over`
+Duplicates the second item to the top
+### `>r`
+Puts the value into a temporary place
+### `r>`
+Retrieve the temporary value
