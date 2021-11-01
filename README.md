@@ -1,4 +1,4 @@
-# Bolet
+# Bolet 🍄
 A stack-based esolang. Not a serious project.
 
 ## Hello world
