@@ -1,7 +1,2 @@
-CC=gcc
-
-all:
-	$(CC) -o bolet main.c
-
-clean:
-	rm *.o
+build:
+	sbcl --load "bolet.lisp" --eval "(sb-ext:save-lisp-and-die \"bolet\" :toplevel #'main :executable t)"
